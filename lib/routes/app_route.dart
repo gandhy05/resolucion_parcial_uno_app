@@ -4,6 +4,7 @@ import 'package:app_parcial_uno/pages/login_page.dart';
 import 'package:app_parcial_uno/pages/register_page.dart';
 import 'package:app_parcial_uno/pages/info_page.dart';
 import 'package:app_parcial_uno/pages/about_page.dart';
+import 'package:app_parcial_uno/pages/dashboard_page.dart';
 
 class AppRoutes {
   static String home = '/';
@@ -11,27 +12,32 @@ class AppRoutes {
   static String register = '/register';
   static String info = '/info';
   static String about = '/about';
+  static String dashboard = '/dashboard';
 }
 
-final routeapp = GoRouter(routes: [
+final routeapps = GoRouter(routes: [
   GoRoute(
     path: AppRoutes.home,
-    builder: (context, state) => const HomePage(),
+    builder: (_, __) => const HomePage(),
   ),
   GoRoute(
     path: AppRoutes.login,
-    builder: (context, state) => const LoginPage(),
+    builder: (_, __) => const LoginPage(),
   ),
   GoRoute(
     path: AppRoutes.register,
-    builder: (context, state) => const RegisterPage(),
+    builder: (_, __) => const RegisterPage(),
   ),
   GoRoute(
     path: AppRoutes.info,
-    builder: (context, state) => const InfoPage(),
+    builder: (_, __) => const InfoPage(),
   ),
   GoRoute(
     path: AppRoutes.about,
-    builder: (context, state) => const AboutPage(),
+    builder: (_, __) => const AboutPage(),
+  ),
+  GoRoute(
+    path: AppRoutes.dashboard,
+    builder: (_, __) => const DashboardPage(),
   ),
 ]);

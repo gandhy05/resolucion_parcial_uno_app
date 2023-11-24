@@ -9,6 +9,7 @@ class InfoPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Info Page'),
       ),
+      backgroundColor: Colors.green,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -18,7 +19,6 @@ class InfoPage extends StatelessWidget {
               style: TextStyle(fontSize: 18),
             ),
             SizedBox(height: 20),
-            
           ],
         ),
       ),

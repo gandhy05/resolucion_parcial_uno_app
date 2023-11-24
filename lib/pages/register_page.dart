@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dashboard_page.dart';
+
 class RegisterPage extends StatelessWidget {
   const RegisterPage({super.key});
 
@@ -9,6 +10,7 @@ class RegisterPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Register Page'),
       ),
+      backgroundColor: Colors.blue,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -18,11 +20,9 @@ class RegisterPage extends StatelessWidget {
               style: TextStyle(fontSize: 18),
             ),
             SizedBox(height: 20),
-            
             ElevatedButton(
               onPressed: () {
-              
-                Navigator.pushReplacement(
+                Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => DashboardPage()),
                 );

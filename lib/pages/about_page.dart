@@ -9,6 +9,7 @@ class AboutPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('About Page'),
       ),
+      backgroundColor: Colors.orange,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

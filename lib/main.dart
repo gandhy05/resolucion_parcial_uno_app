@@ -10,7 +10,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       title: 'Material App',
-      routerConfig: routeapp,
+      routerConfig: routeapps,
+      theme: ThemeData(
+        primaryColor: Colors.red, // Color de acento de la aplicación
+        scaffoldBackgroundColor: const Color.fromARGB(255, 245, 86, 86),
+        colorScheme: ColorScheme.fromSwatch().copyWith(
+            secondary: Colors.redAccent), // Color de fondo del scaffold
+        // Puedes agregar más propiedades de ThemeData según tus necesidades
+      ),
     );
   }
 }
